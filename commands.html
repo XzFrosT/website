@@ -1,0 +1,949 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+	
+<!-- Mirrored from dyno.gg/commands by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Apr 2019 01:06:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Dyno is a feature-rich and modular discord bot for your Discord server. With web configuration, moderation, anti-spam, auto roles, music, custom commands, and much more!">
+		<meta property="og:title" content="Dyno - A feature-rich bot for Discord" />
+		<meta property="og:url" content="https://dev.dynobot.net />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Dyno is a feature-rich and modular bot for your Discord server. With web configuration, moderation, anti-spam, auto roles, music, custom commands, and much more!" />
+		<meta property="og:image" content="../dev.dynobot.net/images/v3/dyno-25608bb.jpg?v=1.2.10" />		<title>Dyno</title>
+		<link rel="shortcut icon" type="image/png" href="images/v3/favicon.png"/>
+		<link rel="stylesheet" href="../pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/app.e6a98fcc7e9135beb791d7af6ff3eb3c.css">
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MFGKT6L');</script>
+		<!-- End Google Tag Manager -->
+	</head>
+	<body>
+		<nav class="level top-bar">
+			<div class="level-left">
+				<h1 class="title">
+					<a href="index.html" title="Dyno">
+						<img src="images/v3/dyno-44.svg" alt="Dyno" style="margin-right: 10px;" />
+                        Dyno
+					</a>
+				</h1>
+				<nav class="nav">
+	<div class="nav-left nav-menu">
+        <a class="nav-item nav-invite button is-info" href="invite.html" title="Add Dyno to your server"><strong>Add To Server</strong></a>
+        <a class="nav-item nav-serverlisting" href="servers.html" title="Public Servers">Public Servers</a>
+		<a class="nav-item nav-discord" href="discord.html" title="Dyno Discord Server" target="_blank">Join Our Discord</a>
+		<a class="nav-item nav-commands" href="commands.html" title="Commands">Commands</a>
+        <a class="nav-item nav-faq" href="faq.html" title="Frequently Asked Questions">FAQ</a>
+        <a class="nav-item nav-donate" href="upgrade.html" title="Get Premium">
+        	<span class="icon is-link">
+        		<i class="fa fa-arrow-circle-up"></i>
+        	</span>
+        	Get Premium
+        </a>
+		<a class="nav-item nav-status" href="status.html" title="Dyno Status">Status</a>
+	</div>
+</nav>			</div>
+
+			<div id='auth-mount'></div>
+		</nav>
+
+		<div class="page-wrapper">
+			<div class="page-commands">
+	<div class="hero">
+		<div class="container">
+			<div class="columns">
+				<div class="column">
+					<h1 class="title">Commands</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="columns">
+			<div class="column is-3">
+				<aside class="menu">
+					<ul class="menu-list">
+						<li><a href="#/Roles" class="tab-control-legacy is-active">Roles</a></li>
+						<li><a href="#/Manager" class="tab-control-legacy">Manager</a></li>
+						<li><a href="#/Moderator" class="tab-control-legacy">Moderator</a></li>
+						<li><a href="#/Music" class="tab-control-legacy">Music</a></li>
+						<li><a href="#/Fun" class="tab-control-legacy">Fun</a></li>
+						<li><a href="#/Misc" class="tab-control-legacy">Misc</a></li>
+						<li><a href="#/Tags" class="tab-control-legacy">Tags</a></li>
+						<li><a href="#/Info" class="tab-control-legacy">Info</a></li>
+					</ul>
+				</aside>
+				<div id="carbon">
+					<div class="carbon-wrapper carbon-bottom">
+						<script async type="text/javascript" src="../cdn.carbonads.com/carbon3c27.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=dynobotnet" id="_carbonads_js"></script>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<script src="../m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+				<div class="bsa-cpc"></div>
+				<script>(function(){ if(typeof _bsa !== 'undefined' && _bsa) { _bsa.init('default', 'CKYD4KQU', 'placement:dynobotnet', { target: '.bsa-cpc', align: 'horizontal', disable_css: 'true' }); } })();</script>
+					<div id="Roles" class="container tab-content is-active">
+						<table class="table is-striped">
+							<thead>
+								<tr><th>Command</th><th>Description</th><th>Usage</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>addrank</strong></td>
+									<td>Add a new rank for members to join, works with existing or new roles.</td>
+									<td>addrank [name] (hex color) (hoist)</td>
+								</tr>
+								<tr>
+									<td><strong>rank</strong></td>
+									<td>Join/leave a rank</td>
+									<td>rank [rank name]</td>
+								</tr>
+								<tr>
+									<td><strong>ranks</strong></td>
+									<td>Get a list of joinable ranks.</td>
+									<td>ranks</td>
+								</tr>
+								<tr>
+									<td><strong>delrank</strong></td>
+									<td>Delete an existing rank, does not delete the role.</td>
+									<td>delrank [rank name]</td>
+								</tr>
+								<tr>
+									<td><strong>roles</strong></td>
+									<td>Get a list of server roles and member counts.</td>
+									<td>roles (optional search)</td>
+								</tr>
+								<tr>
+									<td><strong>roleinfo</strong></td>
+									<td>Get information about a role.</td>
+									<td>roleinfo</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="Manager" class="container tab-content">
+						<table class="table is-striped">
+							<thead>
+								<tr><th>Command</th><th>Description</th><th>Usage</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>addmod</strong></td>
+									<td>Add a bot moderator or group of moderators.</td>
+									<td>addmod [user or role]</td>
+								</tr>
+								<tr>
+									<td><strong>addrole</strong></td>
+									<td>Add a new role, with optional color and hoist.</td>
+									<td>addrole [name] [hex color] [hoist]</td>
+								</tr>
+								<tr>
+									<td><strong>announce</strong></td>
+									<td>Send an announcement using the bot.</td>
+									
+										<td>announce [channel] [message]</td>
+								</tr>
+										<tr>
+											<td><strong>announce everyone</strong></td>
+											<td>Send an announcement with @everyone.</td>
+											<td>announce everyone [channel] [message]</td>
+										</tr>
+										<tr>
+											<td><strong>announce here</strong></td>
+											<td>Send an announcement with @here.</td>
+											<td>announce here [channel] [message]</td>
+										</tr>
+										<tr>
+											<td><strong>announce role</strong></td>
+											<td>Send an announcement with a role mention.</td>
+											<td>announce role [role] [channel] [message]</td>
+										</tr>
+								<tr>
+									<td><strong>ignorerole</strong></td>
+									<td>Toggles command usage for a role. (Does not affect mods and managers)</td>
+									<td>ignorerole [role]</td>
+								</tr>
+								<tr>
+									<td><strong>delrole</strong></td>
+									<td>Delete a role</td>
+									<td>delrole [role name]</td>
+								</tr>
+								<tr>
+									<td><strong>delmod</strong></td>
+									<td>Remove a bot moderator</td>
+									<td>delmod [user or role]</td>
+								</tr>
+								<tr>
+									<td><strong>modules</strong></td>
+									<td>List available modules</td>
+									<td>modules</td>
+								</tr>
+								<tr>
+									<td><strong>ignorechannel</strong></td>
+									<td>Toggles command usage for a channel. (Does not affect mods and managers)</td>
+									<td>ignorechannel [channel]</td>
+								</tr>
+								<tr>
+									<td><strong>prefix</strong></td>
+									<td>Set prefix for server</td>
+									<td>prefix [prefix]</td>
+								</tr>
+								<tr>
+									<td><strong>mentionable</strong></td>
+									<td>Toggle making a role mentionable on/off</td>
+									<td>mentionable [role name]</td>
+								</tr>
+								<tr>
+									<td><strong>rolecolor</strong></td>
+									<td>Change the color of a role.</td>
+									<td>rolecolor [role name] [hex color]</td>
+								</tr>
+								<tr>
+									<td><strong>setnick</strong></td>
+									<td>Change the nickname of a user.</td>
+									<td>setnick [user] [new nickname]</td>
+								</tr>
+								<tr>
+									<td><strong>nick</strong></td>
+									<td>Change the bot nickname.</td>
+									<td>nickname [new nickname]</td>
+								</tr>
+								<tr>
+									<td><strong>role</strong></td>
+									<td>Add/remove a user to a role or roles.</td>
+									
+										<td>role [user] [role name]</td>
+								</tr>
+										<tr>
+											<td><strong>role add</strong></td>
+											<td>Add a user to a role or roles.</td>
+											<td>role add [user] [role]</td>
+										</tr>
+										<tr>
+											<td><strong>role remove</strong></td>
+											<td>Remove a user from a role or roles.</td>
+											<td>role remove [user] [role]</td>
+										</tr>
+										<tr>
+											<td><strong>role toggle</strong></td>
+											<td>Toggle a user from a role or roles.</td>
+											<td>role toggle [user] [role]</td>
+										</tr>
+										<tr>
+											<td><strong>role removeall</strong></td>
+											<td>Remove all roles from a user</td>
+											<td>role removall [user]</td>
+										</tr>
+										<tr>
+											<td><strong>role all</strong></td>
+											<td>Add/remove all users to or from a role. (Limit 1 role)</td>
+											<td>role all [role]</td>
+										</tr>
+										<tr>
+											<td><strong>role bots</strong></td>
+											<td>Add/remove all bots to or from a role.</td>
+											<td>role bots [role]</td>
+										</tr>
+										<tr>
+											<td><strong>role humans</strong></td>
+											<td>Add/remove all humans to or from a role.</td>
+											<td>role humans [role]</td>
+										</tr>
+										<tr>
+											<td><strong>role in</strong></td>
+											<td>Add/remove users to or from a role that are in a role. (Limit 1 role)</td>
+											<td>role in [in role], [role]</td>
+										</tr>
+								<tr>
+									<td><strong>module</strong></td>
+									<td>Enable/disable a module</td>
+									<td>module [module name]</td>
+								</tr>
+								<tr>
+									<td><strong>rolename</strong></td>
+									<td>Change the name of a role.</td>
+									
+										<td>rolename [role name], [new name]</td>
+								</tr>
+								<tr>
+									<td><strong>customs</strong></td>
+									<td>List, enable, disable custom commands.</td>
+									
+										<td>customs</td>
+								</tr>
+										<tr>
+											<td><strong>customs list</strong></td>
+											<td>List custom commands</td>
+											<td>customs customs list</td>
+										</tr>
+										<tr>
+											<td><strong>customs show</strong></td>
+											<td>Show a custom command</td>
+											<td>customs customs show [command]</td>
+										</tr>
+										<tr>
+											<td><strong>customs enable</strong></td>
+											<td>Enable a custom command</td>
+											<td>customs customs enable [command]</td>
+										</tr>
+										<tr>
+											<td><strong>customs disable</strong></td>
+											<td>Disable a custom command</td>
+											<td>customs customs disable [command]</td>
+										</tr>
+								<tr>
+									<td><strong>clearwarn</strong></td>
+									<td>Clear warnings a user</td>
+									<td>clearwarn [user]</td>
+								</tr>
+								<tr>
+									<td><strong>ignoreuser</strong></td>
+									<td>Toggles command usage for a user.</td>
+									<td>ignoreuser [user] [reason]</td>
+								</tr>
+								<tr>
+									<td><strong>listmods</strong></td>
+									<td>List moderators</td>
+									<td>listmods</td>
+								</tr>
+								<tr>
+									<td><strong>purge</strong></td>
+									<td>Delete a number of messages from a channel. (limit 1000)</td>
+									
+										<td>purge [number] (user)</td>
+								</tr>
+										<tr>
+											<td><strong>purge user</strong></td>
+											<td>Delete messages for a user in the channel.</td>
+											<td>purge [number] [user or id]</td>
+										</tr>
+										<tr>
+											<td><strong>purge match</strong></td>
+											<td>Delete messages containing text. (Limit 100)</td>
+											<td>purge match [text] [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge not</strong></td>
+											<td>Delete messages not containing text. (Limit 100)</td>
+											<td>purge not [text] [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge startswith</strong></td>
+											<td>Delete messages that start with text. (Limit 100)</td>
+											<td>purge startswith [text] [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge endswith</strong></td>
+											<td>Delete messages that ends with text. (Limit 100)</td>
+											<td>purge endswith [text] [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge links</strong></td>
+											<td>Delete a number links posted in the channel. (Limit 100)</td>
+											<td>purge links [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge invites</strong></td>
+											<td>Delete server invites posted in the channel. (Limit 100)</td>
+											<td>purge invites [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge images</strong></td>
+											<td>Delete a number of images in the channel. (Limit 100)</td>
+											<td>purge images [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge mentions</strong></td>
+											<td>Delete messages with mentions in the channel. (Limit 100)</td>
+											<td>purge mentions [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge embeds</strong></td>
+											<td>Delete messages containing rich embeds in the channel.</td>
+											<td>purge embeds [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge bots</strong></td>
+											<td>Delete messages sent by bots.</td>
+											<td>purge bots [number]</td>
+										</tr>
+										<tr>
+											<td><strong>purge text</strong></td>
+											<td>Delete messages containing text, ignoring images/embeds.</td>
+											<td>purge text [number]</td>
+										</tr>
+								<tr>
+									<td><strong>command</strong></td>
+									<td>Enable/disable a command</td>
+									<td>command [command name]</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="Moderator" class="container tab-content">
+						<table class="table is-striped">
+							<thead>
+								<tr><th>Command</th><th>Description</th><th>Usage</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>clean</strong></td>
+									<td>Cleanup the bot responses.</td>
+									<td>clean (optional number)</td>
+								</tr>
+								<tr>
+									<td><strong>diagnose</strong></td>
+									<td>Diagnose any command or module in the bot to determine if there are any problems.</td>
+									<td>diagnose [command or module]</td>
+								</tr>
+								<tr>
+									<td><strong>kick</strong></td>
+									<td>Kick a member</td>
+									<td>kick [user] [reason]</td>
+								</tr>
+								<tr>
+									<td><strong>ignored</strong></td>
+									<td>List channels and users where commands are ignored.</td>
+									<td>ignored</td>
+								</tr>
+								<tr>
+									<td><strong>ban</strong></td>
+									<td>Ban a member, optional time limit</td>
+									<td>ban [user] [limit] [reason]</td>
+								</tr>
+								<tr>
+									<td><strong>mute</strong></td>
+									<td>Mute a member so they cannot type or speak, time limit in minutes.</td>
+									<td>mute [user] [limit] [reason]</td>
+								</tr>
+								<tr>
+									<td><strong>moderations</strong></td>
+									<td>Get a list of active moderations (timed) and remaining time.</td>
+									<td>moderations</td>
+								</tr>
+								<tr>
+									<td><strong>undeafen</strong></td>
+									<td>Undeafen a member</td>
+									<td>undeafen [user]</td>
+								</tr>
+								<tr>
+									<td><strong>members</strong></td>
+									<td>List members in a role (max 90)</td>
+									<td>members [role]</td>
+								</tr>
+								<tr>
+									<td><strong>rolepersist</strong></td>
+									<td>Assign/unassign a role that persists if the user leaves and rejoins.</td>
+									<td>rolepersist [user] [role], [optional reason]</td>
+								</tr>
+								<tr>
+									<td><strong>unmute</strong></td>
+									<td>Unmute a member</td>
+									<td>unmute [user] (optional reason)</td>
+								</tr>
+								<tr>
+									<td><strong>softban</strong></td>
+									<td>Softban a member (ban and immediate unban to delete user messages)</td>
+									<td>softban [user] [reason]</td>
+								</tr>
+								<tr>
+									<td><strong>warn</strong></td>
+									<td>Warn a member</td>
+									<td>warn [user] [reason]</td>
+								</tr>
+								<tr>
+									<td><strong>deafen</strong></td>
+									<td>Deafen a member</td>
+									<td>deafen [user]</td>
+								</tr>
+								<tr>
+									<td><strong>lock</strong></td>
+									<td>Lock a channel with optional timer and message.</td>
+									<td>lock [channel] (time) (message)</td>
+								</tr>
+								<tr>
+									<td><strong>reason</strong></td>
+									<td>Supply a reason for a mod log case</td>
+									<td>reason [case num] [reason]</td>
+								</tr>
+								<tr>
+									<td><strong>modlogs</strong></td>
+									<td>Get a list of mod logs for a user</td>
+									<td>modlogs [user]</td>
+								</tr>
+								<tr>
+									<td><strong>unlock</strong></td>
+									<td>Unlock a previously locked channel.</td>
+									<td>unlock [channel] (message)</td>
+								</tr>
+								<tr>
+									<td><strong>unban</strong></td>
+									<td>Unban a member</td>
+									<td>unban [user or id] [optional reason]</td>
+								</tr>
+								<tr>
+									<td><strong>warnings</strong></td>
+									<td>Get warnings for the server or user</td>
+									<td>warnings [user]</td>
+								</tr>
+								<tr>
+									<td><strong>case</strong></td>
+									<td>Show a single mod log case</td>
+									<td>case [Case ID]</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="Music" class="container tab-content">
+						<table class="table is-striped">
+							<thead>
+								<tr><th>Command</th><th>Description</th><th>Usage</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>skip</strong></td>
+									<td>Skip the current song.</td>
+									<td>skip</td>
+								</tr>
+								<tr>
+									<td><strong>play</strong></td>
+									<td>Add a song to queue and play</td>
+									
+										<td>play [url]</td>
+								</tr>
+								<tr>
+									<td><strong>volume</strong></td>
+									<td>Get or Change the music volume.</td>
+									<td>volume [1-100]</td>
+								</tr>
+								<tr>
+									<td><strong>queue</strong></td>
+									<td>List the songs in queue</td>
+									
+										<td>queue list</td>
+								</tr>
+										<tr>
+											<td><strong>queue remove</strong></td>
+											<td>Remove a song from the music queue.</td>
+											<td>queue remove [number]</td>
+										</tr>
+										<tr>
+											<td><strong>queue clear</strong></td>
+											<td>Clears the entire music queue (Irreversable).</td>
+											<td>queue clear</td>
+										</tr>
+										<tr>
+											<td><strong>queue repeat</strong></td>
+											<td>Enable/disable repeating the music queue.</td>
+											<td>queue repeat</td>
+										</tr>
+										<tr>
+											<td><strong>queue shuffle</strong></td>
+											<td>Shuffle the music queue.</td>
+											<td>queue shuffle</td>
+										</tr>
+										<tr>
+											<td><strong>queue save</strong></td>
+											<td>Save a queue by name to load later</td>
+											<td>queue save [name]</td>
+										</tr>
+										<tr>
+											<td><strong>queue load</strong></td>
+											<td>Load a saved queue, replacing the current queue.</td>
+											<td>queue load [name]</td>
+										</tr>
+										<tr>
+											<td><strong>queue delete</strong></td>
+											<td>Delete a saved queue.</td>
+											<td>queue delete [name]</td>
+										</tr>
+										<tr>
+											<td><strong>queue saved</strong></td>
+											<td>List saved queues.</td>
+											<td>queue saved</td>
+										</tr>
+								<tr>
+									<td><strong>nowplaying</strong></td>
+									<td>Show the currently playing song.</td>
+									<td>nowplaying</td>
+								</tr>
+								<tr>
+									<td><strong>stop</strong></td>
+									<td>Stop the current song.</td>
+									<td>stop</td>
+								</tr>
+								<tr>
+									<td><strong>seek</strong></td>
+									<td>Seek to a position in the song.</td>
+									<td>seek [time]</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="Fun" class="container tab-content">
+						<table class="table is-striped">
+							<thead>
+								<tr><th>Command</th><th>Description</th><th>Usage</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>itunes</strong></td>
+									<td>Get info on a song.</td>
+									<td>itunes [song name]</td>
+								</tr>
+								<tr>
+									<td><strong>quote</strong></td>
+									<td>Get a random quote.</td>
+									<td>quote</td>
+								</tr>
+								<tr>
+									<td><strong>joke</strong></td>
+									<td>Get a joke.</td>
+									<td>joke</td>
+								</tr>
+								<tr>
+									<td><strong>dogfact</strong></td>
+									<td>Get random Dog Facts with this commmand</td>
+									<td>dogfact</td>
+								</tr>
+								<tr>
+									<td><strong>dog</strong></td>
+									<td>Find some cute dog pictures</td>
+									<td>dog</td>
+								</tr>
+								<tr>
+									<td><strong>roll</strong></td>
+									<td>Roll the dice (support optional size: d4, d8, d10, d12, d20, d00)</td>
+									<td>roll [size] [number of dice]</td>
+								</tr>
+								<tr>
+									<td><strong>pokemon</strong></td>
+									<td>Get info on a pokemon.</td>
+									<td>pokemon &lt;pokemon&gt;</td>
+								</tr>
+								<tr>
+									<td><strong>adorable</strong></td>
+									<td>Get an adorable avatar based on your identifier.</td>
+									<td>adorable &lt;identifier&gt;</td>
+								</tr>
+								<tr>
+									<td><strong>slots</strong></td>
+									<td>Spin the slots and win the jackpot! ...or lose everything.</td>
+									<td>slots</td>
+								</tr>
+								<tr>
+									<td><strong>define</strong></td>
+									<td>Define a word.</td>
+									<td>define [word]</td>
+								</tr>
+								<tr>
+									<td><strong>rps</strong></td>
+									<td>Rock Paper Scissors with the bot.</td>
+									<td>rps [choice]</td>
+								</tr>
+								<tr>
+									<td><strong>cat</strong></td>
+									<td>Find some cute cat pictures</td>
+									<td>cat</td>
+								</tr>
+								<tr>
+									<td><strong>dynonorris</strong></td>
+									<td>Get a random Dyno Norris fact.</td>
+									<td>dynorris</td>
+								</tr>
+								<tr>
+									<td><strong>country</strong></td>
+									<td>Check the stats on a country</td>
+									<td>country [3 letter country code]</td>
+								</tr>
+								<tr>
+									<td><strong>weather</strong></td>
+									<td>Get the forecast information for a location.</td>
+									<td>weather [location]</td>
+								</tr>
+								<tr>
+									<td><strong>pug</strong></td>
+									<td>Find some cute pug pictures</td>
+									<td>pug</td>
+								</tr>
+								<tr>
+									<td><strong>steamstatus</strong></td>
+									<td>Check the status of Steam</td>
+									<td>steamstatus</td>
+								</tr>
+								<tr>
+									<td><strong>flip</strong></td>
+									<td>Flip a coin.</td>
+									<td>flip</td>
+								</tr>
+								<tr>
+									<td><strong>math</strong></td>
+									<td>Math command</td>
+									
+										
+								</tr>
+								<tr>
+									<td><strong>space</strong></td>
+									<td>Get info about the ISS.</td>
+									<td>space</td>
+								</tr>
+								<tr>
+									<td><strong>catfact</strong></td>
+									<td>Get random Cat Facts with this commmand</td>
+									<td>catfact</td>
+								</tr>
+								<tr>
+									<td><strong>dadjoke</strong></td>
+									<td>Get a random Dad joke.</td>
+									<td>dadjoke</td>
+								</tr>
+								<tr>
+									<td><strong>bird</strong></td>
+									<td>Random Adorable Birdies</td>
+									<td>bird</td>
+								</tr>
+								<tr>
+									<td><strong>github</strong></td>
+									<td>Get info on a Github repository.</td>
+									
+										
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="Misc" class="container tab-content">
+						<table class="table is-striped">
+							<thead>
+								<tr><th>Command</th><th>Description</th><th>Usage</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>afk</strong></td>
+									<td>Set an AFK status to display when you are mentioned</td>
+									
+										<td>afk</td>
+								</tr>
+										<tr>
+											<td><strong>afk set</strong></td>
+											<td>Set an AFK status shown when you&#x27;re mentioned, and display in nickname.</td>
+											<td>afk set [status]</td>
+										</tr>
+										<tr>
+											<td><strong>afk ignore</strong></td>
+											<td>Use in a channel to not return from AFK when talking in that channel.</td>
+											<td>afk ignore [channel]</td>
+										</tr>
+								<tr>
+									<td><strong>remindme</strong></td>
+									<td>Set a reminder</td>
+									<td>remindme [reminder]</td>
+								</tr>
+								<tr>
+									<td><strong>color</strong></td>
+									<td>Show a color using hex.</td>
+									
+										
+								</tr>
+								<tr>
+									<td><strong>google</strong></td>
+									<td>Get search results from google</td>
+									<td>google [search string]</td>
+								</tr>
+								<tr>
+									<td><strong>avatar</strong></td>
+									<td>Get a users&#x27; avatar.</td>
+									<td>avatar [user]</td>
+								</tr>
+								<tr>
+									<td><strong>dynoavatar</strong></td>
+									<td>Generates a Dyno-like avatar.</td>
+									<td>dynoav</td>
+								</tr>
+								<tr>
+									<td><strong>randomcolor</strong></td>
+									<td>Generates a random hex color with preview.</td>
+									<td>randomcolor</td>
+								</tr>
+								<tr>
+									<td><strong>whois</strong></td>
+									<td>Get user information.</td>
+									<td>whois [user mention]</td>
+								</tr>
+								<tr>
+									<td><strong>distance</strong></td>
+									<td>Get the distance between two sets of coordinates</td>
+									<td>distance [coords] [coords]</td>
+								</tr>
+								<tr>
+									<td><strong>membercount</strong></td>
+									<td>Get the server member count.</td>
+									<td>membercount</td>
+								</tr>
+								<tr>
+									<td><strong>discrim</strong></td>
+									<td>Gets a list of users with a discriminator</td>
+									<td>discrim 1234</td>
+								</tr>
+								<tr>
+									<td><strong>emotes</strong></td>
+									<td>Gets a list of server emojis.</td>
+									<td>emotes</td>
+								</tr>
+								<tr>
+									<td><strong>serverinfo</strong></td>
+									<td>Get server info/stats.</td>
+									<td>serverinfo</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="Tags" class="container tab-content">
+						<table class="table is-striped">
+							<thead>
+								<tr><th>Command</th><th>Description</th><th>Usage</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>tag</strong></td>
+									<td>Get or create a tag</td>
+									
+										<td>tag [tag name]</td>
+								</tr>
+										<tr>
+											<td><strong>tag create</strong></td>
+											<td>Create a new tag.</td>
+											<td>tag create [tag name] [content]</td>
+										</tr>
+										<tr>
+											<td><strong>tag edit</strong></td>
+											<td>Edit an existing tag.</td>
+											<td>tag edit [tag name] [content]</td>
+										</tr>
+										<tr>
+											<td><strong>tag delete</strong></td>
+											<td>Delete an existing tag.</td>
+											<td>tag delete [tag name]</td>
+										</tr>
+								<tr>
+									<td><strong>tags</strong></td>
+									<td>Get a list of tags, use the tag command to fetch a tag.</td>
+									<td>tags (optional search)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="Info" class="container tab-content">
+						<table class="table is-striped">
+							<thead>
+								<tr><th>Command</th><th>Description</th><th>Usage</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>premium</strong></td>
+									<td>Dyno premium information. (Responds in DM)</td>
+									<td>premium</td>
+								</tr>
+								<tr>
+									<td><strong>info</strong></td>
+									<td>Get bot info.</td>
+									<td>info</td>
+								</tr>
+								<tr>
+									<td><strong>uptime</strong></td>
+									<td>Get bot uptime</td>
+									<td>uptime</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+
+		<footer class="footer">
+		  <div class="container-fluid">
+		    <div class="content has-text-centered">
+					<section class="section" style="background-color: transparent">
+  <div class="container ">
+    <footer>
+      <ul class="left">
+        <li>
+          <i class="far fa-envelope fa-lg" aria-hidden="true"></i>
+          <a class="link is-info left" href="discord.html" target="_blank" title="Dyno Discord Server">Support Server</a>
+        </li>
+        <li>
+          <i class="fab fa-twitter fa-lg"></i>
+          <a class="link is-info left" href="https://twitter.com/DynoDiscord" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <i class="fas fa-question fa-lg" aria-hidden="true"></i>
+          <a class="link is-info faq" href="faq.html" title="Frequently Asked Questions">FAQ</a>
+        </li>
+      </ul>
+      <ul class="middle">
+        <li>
+          <a class="link is-info add-dyno" href="invite.html" title="Add Dyno">
+            <i class="far fa-plus-square fa-lg right" aria-hidden="true" style="color: #336fd5"></i>
+            <strong>Add Dyno</strong>
+          </a>
+        </li>
+        <li>
+          <a class="link is-info premium-button" href="upgrade.html" title="Dyno Premium">
+            <strong>Get premium</strong>
+          </a>
+        </li>
+      </ul>
+      <ul class="right">
+        <li>
+          <a class="link is-info right" href="terms.html" title="Terms of Service">Terms of Service</a>
+          <i class="fas fa-terminal fa-lg" aria-hidden="true"></i>
+        </li>
+        <li>
+          <a class="link is-info right" href="commands.html" title="Commands">Commands</a>
+          <i class="fas fa-gavel fa-lg" aria-hidden="true"></i>
+        </li>
+        <li>
+          <a class="link is-info right" href="privacy.html" title="Privacy Policy">Privacy Policy</a>
+          <i class="fas fa-user-secret fa-lg" aria-hidden="true"></i>
+        </li>
+      </ul>
+      <span style="grid-column-end: 4; grid-column-start: 1;">© 2019 Solomid Corporation. All rights reserved.</span>
+    </footer>
+  </div>
+</section>		    </div>
+		  </div>
+		</footer>
+
+		<script src="js/vendor/jquery.js"></script>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-W6NZSRQ');</script>
+		<!-- End Google Tag Manager -->
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFGKT6L"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<script type="text/javascript">
+			var host = 'index.html';
+		</script>
+			<script type="text/javascript" src="js/react/auth.0cc8d11c35024771682ab99cd3c8d0bf.js"></script>
+			<script type="text/javascript" src="js/react/auth.0cc8d11c35024771682ab99cd3c8d0bf.js"></script>
+		<script src="js/app.c23c59f5404b261a516b166923d2c3bd.js"></script>
+	</body>
+
+<!-- Mirrored from dyno.gg/commands by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Apr 2019 01:06:12 GMT -->
+</html>
