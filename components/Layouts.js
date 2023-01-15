@@ -5,7 +5,7 @@ const Layouts = (props) => {
   return (
     <>
       <Head>
-        <title>XzFrosT{pageTitle}</title>
+        <title>{`Ihsan${pageTitle ?? ""}`}</title>
       </Head>
 
       <>{children}</>

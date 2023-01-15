@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Layouts from '@/components/Layouts';
 import { motion } from 'framer-motion';
 import { ContentAnimation, FadeAnimation, CardHomeAnimation } from '@/components/Animations';
@@ -8,7 +9,7 @@ const Home = () => {
     <Layouts>
       <section className="relative flex w-full flex-col items-center justify-evenly py-40 md:h-screen md:flex-row md:overflow-hidden">
         <motion.span {...FadeAnimation} className="title-page">
-          XZFROST
+          IHSAN
         </motion.span>
 
         <motion.div {...ContentAnimation} className="relative order-2 flex w-1/2 justify-end md:order-1 md:w-1/3">
@@ -24,7 +25,9 @@ const Home = () => {
         <motion.div {...ContentAnimation} className="relative order-1 w-1/3 md:order-2">
           <h3 className="-mb-3 text-base font-normal">Hi! My name is</h3>
           <h1 className="-ml-1 mb-1 text-6xl font-bold text-primary-light">Ihsan</h1>
-          <h4 className="text-sm font-light transition-all duration-500 hover:text-primary-light">Back-End Dev | Student</h4>
+          <Link href="/about">
+            <h4 className="text-sm font-light transition-all duration-500 hover:text-primary-light">Back-End Dev | Student</h4>
+          </Link>
         </motion.div>
       </section>
     </Layouts>

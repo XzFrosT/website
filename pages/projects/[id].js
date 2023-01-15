@@ -14,7 +14,7 @@ const ProjectDetail = withRouter(
     const getProject = Projects.find((project) => project.slug === id);
 
     return (
-      <Layouts pageTitle=" | Projects">
+      <Layouts pageTitle={`| ${getProject.name}`}>
         <section className="relative flex w-full items-center justify-center py-40 md:h-screen">
           <span className="title-page">PROJECTS</span>
 
@@ -23,7 +23,7 @@ const ProjectDetail = withRouter(
               <>
                 <div className="mb-3 w-full overflow-hidden rounded-lg md:mb-0 md:w-[480px]">
                   <div className="relative mb-[6px] h-44 w-full md:h-[294px]">
-                    <Image src={`/images/projects/${getProject.img}.png`} priority layout="fill" alt={getProject.name} className="relative" />
+                    <Image src={`/images/projects/${getProject.img}`} priority layout="fill" alt={getProject.name} className="relative" />
                   </div>
                   <div className="flex w-full justify-between bg-primary-dark text-center font-semibold text-primary-light">
                     <a href={getProject.demo} target="_blank" rel="noreferrer" className="w-[238px] rounded-bl-lg border-2 border-primary-dark py-1 transition-all duration-500 hover:bg-primary-light hover:text-primary-dark">

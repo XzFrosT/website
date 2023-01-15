@@ -6,7 +6,7 @@ import { Projects } from '@/data/Projects';
 import { useEffect, useRef } from 'react';
 import { ProjectCardAnimation, FadeAnimation } from '@/components/Animations';
 
-const Works = () => {
+const Project = () => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Works = () => {
 
   return (
     <Layouts pageTitle=" | Projects">
-      <section className="relative flex h-[450vh] items-center justify-center">
+      <section className="relative flex h-[200vh] items-center justify-center">
         <motion.span {...FadeAnimation} className="title-page">
           PROJECTS
         </motion.span>
@@ -28,19 +28,16 @@ const Works = () => {
           {Projects.map((project) => (
             <div key={project.id}>
               <motion.div {...ProjectCardAnimation} className="mx-12 flex w-72 flex-col items-center justify-center rounded-md border-4 border-primary-light bg-primary-light p-[2px]">
-                <Link href={`/projects/${project.slug}`}>
+                <Link href={`/projects/${project.slug}`} legacyBehavior>
                   <motion.a {...FadeAnimation} className="relative h-44 w-full overflow-hidden rounded-md bg-primary-dark">
-                    <Image src={`/images/projects/${project.img}.png`} layout="fill" alt={project.name} className="relative transition-all duration-500 hover:scale-125" />
+                    <Image src={`/images/projects/${project.img}`} priority layout="fill" alt={project.name} className="relative transition-all duration-500 hover:scale-125" />
                   </motion.a>
                 </Link>
                 <div className="py-2 text-xl font-medium text-primary-dark">{project.name}</div>
-                <div className="flex w-full justify-between px-3 pt-1 pb-4">
-                  <a href={project.demo} target="_blank" rel="noreferrer">
-                    <span className="rounded-md border-2 border-primary-dark px-3 py-2 font-semibold text-primary-dark transition-all duration-500 hover:bg-primary-dark hover:text-primary-light">View Demo</span>
-                  </a>
-                  <a href={project.sourceCode} target="_blank" rel="noreferrer">
-                    <span className="rounded-md border-2 border-primary-dark px-1 py-2 font-semibold text-primary-dark transition-all duration-500 hover:bg-primary-dark hover:text-primary-light">Source Code</span>
-                  </a>
+                <div className="flex w-full justify-center px-3 pt-1 pb-4">
+                  <Link href={`/projects/${project.slug}`}>
+                    <span className="rounded-md border-2 border-primary-dark px-12 py-2 font-semibold text-primary-dark transition-all duration-500 hover:bg-primary-dark hover:text-primary-light">View Project</span>
+                  </Link>
                 </div>
               </motion.div>
             </div>
@@ -60,4 +57,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Project;

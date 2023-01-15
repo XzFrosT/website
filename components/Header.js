@@ -35,8 +35,8 @@ const Header = () => {
         <div className={`absolute top-12 right-0 md:relative md:top-0 md:mr-10 md:w-11/12 lg:mr-40 lg:w-1/2 ${!open ? 'hide' : 'show'}`}>
           <nav className="navbar">
             {navLinks.map((link) => (
-              <Link key={link.title} href={link.path}>
-                <a className={`nav-items ${router.pathname === link.path ? 'text-primary-light' : ''}`}>{link.title}</a>
+              <Link className={`nav-items ${router.pathname === link.path ? 'text-primary-light' : ''}`} key={link.title} href={link.path}>
+                {link.title}
               </Link>
             ))}
           </nav>
