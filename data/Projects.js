@@ -14,7 +14,7 @@ export const Projects = [
     slug: 'adityaplastic',
     img: 'adityaplastic.png',
     demo: 'https://adityaplastic.netlify.app',
-    sourceCode: 'https://github.com/xzfrost/aditya-plastic',
+    sourceCode: 'https://github.com/xzfrost/adityaplastic',
     description: 'Website for CV aditya plastic.',
   }
 ];
