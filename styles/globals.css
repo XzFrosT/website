@@ -65,7 +65,13 @@
   .skills-icon {
     @apply my-2 ml-4 h-14 w-14 rounded-lg fill-secondary-light transition-all duration-500 hover:bg-secondary-dark hover:fill-primary-light;
   }
-
+  .skills-icon .skills-name {
+  	@apply absolute invisible font-light text-primary-light text-center z-40;
+  }
+  .skills-icon:hover .skills-name {
+  	@apply visible;
+  }
+  
   .contact-form {
     @apply w-full rounded-md border border-secondary-light bg-primary-dark px-4 py-1 transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none;
   }

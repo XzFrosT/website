@@ -11,7 +11,7 @@ const Contact = () => {
   useEffect(() => {
     const scriptURL = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL;
     const form = document.forms['contact-form'];
-
+    
     const sumbitForm = (e) => {
       e.preventDefault();
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
@@ -25,11 +25,11 @@ const Contact = () => {
           setMessageAlert(false);
         });
     };
-
+    
     form.addEventListener('submit', sumbitForm);
     return () => form.removeEventListener('submit', sumbitForm);
   }, []);
-
+  
   return (
     <Layouts pageTitle=" | Contact">
       <section className="relative flex w-full flex-col items-center justify-evenly py-40 md:h-screen md:flex-row md:overflow-hidden">
@@ -40,14 +40,12 @@ const Contact = () => {
         <motion.div {...ContentAnimation} className="relative my-10 w-9/12 text-right md:my-0 md:w-2/5">
           {Contacts.map((contact) => (
             <a href={contact.href} target="_blank" rel="noreferrer" key={contact.id} className="my-4 flex justify-end fill-secondary-light transition-all duration-500 hover:fill-primary-light hover:text-primary-light">
-              <div className="mr-8">
+              <div className="mr-3">
                 <h4 className="text-base">{contact.name}</h4>
                 <h3 className="text-sm font-extralight">{contact.value}</h3>
               </div>
-              <div className="h-12 w-12">
-                <svg className="p-1" role="img" viewBox={`${contact?.viewBox ? contact?.viewBox : "0 0 24 24"}`} xmlns="http://www.w3.org/2000/svg">
-                  <path d={contact.svg} />
-                </svg>
+              <div>
+                {contact.icon("h-12 w-12")}
               </div>
             </a>
           ))}

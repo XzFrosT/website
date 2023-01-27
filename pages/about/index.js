@@ -23,9 +23,8 @@ const About = () => {
           <div className="flex w-4/5 flex-wrap justify-evenly">
             {Skills.map((skill) => (
               <div key={skill.id} className="skills-icon">
-                <svg className="p-2" role="img" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                  <path d={skill.svg} />
-                </svg>
+                {skill.icon("h-12 w-12")}
+                <span className="skills-name">{skill.name}</span>
               </div>
             ))}
           </div>
