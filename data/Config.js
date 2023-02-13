@@ -1,10 +1,12 @@
 export const Config = {
 	cdn: "cdn.statically.io",
-	domains: ["ihsanhardiansah.me", "xzfrost.fun", "muhamadihsan.tech"]
+	domains: ["ihsanhardiansah.me", "xzfrost.fun", "muhamadihsan.tech"],
+	name: "ihsan's portfolio",
+	description: "Let me introduce myself to you my name is ihsan, and this is my personal website. Welcome!"
 }
 
 export const staticImageLoader = ({ src, width, height }) => {
-	let path = "https://" + Config["cdn"] + "/img/" + Config["domains"][0] + "/f=auto&q=100/images" + src;
+	let path = "https://" + Config["cdn"] + "/img/" + Config["domains"][0] + "/f=auto/images" + src;
 	
 	return path;
 }
