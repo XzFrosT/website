@@ -2,10 +2,13 @@ import Head from 'next/head';
 
 const Layouts = (props) => {
   const { children, pageTitle } = props;
+  const thisTitle = `ihsan` + (pageTitle ?? "");
+  
   return (
     <>
       <Head>
-        <title>{`Ihsan${pageTitle ?? ""}`}</title>
+        <title>{thisTitle}</title>
+        <meta property="og:title" content={thisTitle} />
       </Head>
 
       <>{children}</>

@@ -15,10 +15,10 @@ const Document = () => {
         
         <link rel="icon" href="images/profile/profile.png" type="image/png" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Ihsan's website" />
-        <meta property="og:title" content="Ihsan"/>
+        <meta property="og:site_name" content={Config["name"]} />
+        <meta property="og:title" content="ihsan" />
         <meta property="og:description" content={Config["description"]} />
-        <meta property="og:image" content={staticImageLoader({src:"/profile/profile.png", height: "500px", width: "500px"})} />
+        <meta property="og:image" content={staticImageLoader({ src:"/profile/profile.png" })} />
       </Head>
       <body>
         <Main />
