@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Projects } from '@/data/Projects';
 import { useEffect, useRef } from 'react';
 import { ProjectCardAnimation, FadeAnimation } from '@/components/Animations';
+import { staticImageLoader } from "@/data/Config";
 
 const Project = () => {
   const ref = useRef(null);
@@ -30,7 +31,7 @@ const Project = () => {
               <motion.div {...ProjectCardAnimation} className="mx-12 flex w-72 flex-col items-center justify-center rounded-md border-4 border-primary-light bg-primary-light p-[2px]">
                 <Link href={`/projects/${project.slug}`} legacyBehavior>
                   <motion.a {...FadeAnimation} className="relative h-44 w-full overflow-hidden rounded-md bg-primary-dark">
-                    <Image src={`/images/projects/${project.img}`} priority layout="fill" alt={project.name} className="relative transition-all duration-500 hover:scale-125" />
+                    <Image loader={staticImageLoader} src={`/projects/${project.img}`} priority layout="fill" alt={project.name} className="relative transition-all duration-500 hover:scale-125" />
                   </motion.a>
                 </Link>
                 <div className="py-2 text-xl font-medium text-primary-dark">{project.name}</div>

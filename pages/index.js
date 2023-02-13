@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layouts from '@/components/Layouts';
 import { motion } from 'framer-motion';
 import { ContentAnimation, FadeAnimation, CardHomeAnimation } from '@/components/Animations';
+import { staticImageLoader } from "@/data/Config";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
           <motion.div {...CardHomeAnimation} animate={{ rotate: -3 }} className="card-home absolute bg-secondary-light" />
           <motion.div {...CardHomeAnimation} animate={{ rotate: 2 }} className="card-home relative bg-primary-light">
             <motion.div {...FadeAnimation} className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-xl">
-              <Image src="/images/profile/profile.png" priority layout="intrinsic" width={500} height={500} alt="Muhamad Ihsan" className="relative" />
+              <Image loader={staticImageLoader} src="/profile/profile.png" priority layout="intrinsic" width={500} height={500} alt="Muhamad Ihsan" className="relative" />
             </motion.div>
           </motion.div>
         </motion.div>
