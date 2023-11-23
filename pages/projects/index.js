@@ -20,7 +20,7 @@ const Project = () => {
 
   return (
     <Layouts pageTitle=" | Projects">
-      <section className="relative flex h-[200vh] items-center justify-center">
+      <section className="relative flex h-[235vh] items-center justify-center md:h-[135vh]">
         <motion.span {...FadeAnimation} className="title-page">
           PROJECTS
         </motion.span>
