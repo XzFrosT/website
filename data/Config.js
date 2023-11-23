@@ -1,6 +1,6 @@
 export const Config = {
 	cdn: "cdn.statically.io",
-	domains: ["ihsanhardiansah.me", "xzfrost.fun", "muhamadihsan.tech"],
+	domains: ["ihsan.fun"],
 	name: "ihsan's portfolio",
 	description: "Let me introduce myself to you my name is ihsan, and this is my personal website. Welcome!"
 }
